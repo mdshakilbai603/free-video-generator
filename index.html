@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ভিডিও জেনারেট করুন</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <h1>🎥 ভিডিও জেনারেট করুন</h1>
+  <p>এই সাইট বিনামূল্যে। এখানে ভিডিও তৈরি হয় ব্রাউজারের মধ্যেই — কোনো সার্ভার খরচ নেই।</p>
+
+  <label>ভিডিও আইডিয়া লিখুন:</label>
+  <input id="prompt" placeholder="উদাহরণ: সূর্যাস্ত, সমুদ্র, চলমান আলো" />
+
+  <label>ফ্রেম সংখ্যা:</label>
+  <input id="frames" type="number" value="60" min="10" max="300" />
+
+  <button id="genBtn">ভিডিও জেনারেট করুন</button>
+
+  <div class="preview">
+    <canvas id="canvas" width="640" height="360"></canvas>
+  </div>
+
+  <a id="downloadBtn" class="download" style="display:none;">ভিডিও ডাউনলোড</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
